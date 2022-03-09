@@ -9,3 +9,11 @@ Here instead we have two files: one is the one that comes from _ScalaJS_, `targe
 To start building your app, run `yarn start` (or `npm run start`) and it will bundle the dependencies then start watching the Scala files and rebuilding the main app.
 
 If you want to add a new _npm_ dependency, modify `globals.js` and restart `yarn start`.
+
+## Building on Netlify
+
+- Specify the build script `yarn run build`.
+  - This will use the sbt wrapper `sbtx` to run 'sbt fullLinkJS` out of nothing, and it works. It will also bundle and minify the JS globals you have on `globals.js` then move everything to a `dist` directory.
+  - This is only intended to be run inside Netlify.
+- Specify the publish directory `dist`.
+  - Everything will be very minified and nice.
