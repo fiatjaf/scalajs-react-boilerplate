@@ -1,7 +1,7 @@
 {
   "scripts": {
-    "start": "./build.js && sbt ~fastLinkJS",
-    "build": "./build.js prod && ./sbtx fullLinkJS && mkdir -p dist/target/scala-3.1.1/app-fastopt/ && cp index.html globals.bundle.js dist/ && cp target/scala-3.1.1/app-opt/main.js dist/target/scala-3.1.1/app-fastopt/"
+    "start": "./esbuild.js && sbt ~fastLinkJS",
+    "build": "./esbuild.js prod && ./sbtx fullLinkJS && mkdir -p dist/target/scala-3.1.1/app-fastopt/ && cp index.html globals.bundle.js dist/ && cp target/scala-3.1.1/app-opt/main.js dist/target/scala-3.1.1/app-fastopt/"
   },
   "dependencies": {
     "esbuild": "^0.14.23",
