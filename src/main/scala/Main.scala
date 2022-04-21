@@ -1,5 +1,3 @@
-package app
-
 import org.scalajs.dom.document
 import slinky.web.ReactDOM
 import slinky.web.html._

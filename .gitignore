@@ -3,3 +3,6 @@ target
 globals.bundle.js
 yarn.lock
 node_modules
+.bloop
+.metals
+project/project

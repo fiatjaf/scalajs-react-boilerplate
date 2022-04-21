@@ -1,8 +1,7 @@
 enablePlugins(ScalaJSPlugin)
-// enablePlugins(ScalaJSBundlerPlugin)
 
 name := "app"
-scalaVersion := "2.13.7"
+scalaVersion := "3.1.1"
 
 scalaJSUseMainModuleInitializer := true
 
